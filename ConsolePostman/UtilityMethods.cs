@@ -47,12 +47,15 @@ namespace ConsolePostman
 
                 if (response.IsSuccessStatusCode)
                 {
-                    Console.WriteLine("================================================================="); ;
-                    Console.WriteLine($"GET request to: {client.BaseAddress}");
-                    Console.WriteLine("================================================================="); ;
+                    Console.WriteLine("==========================================================================="); ;
+                    Console.WriteLine($"GET request sent to: {client.BaseAddress}");
+                    Console.WriteLine("==========================================================================="); ;
                     Console.WriteLine("\n");
                     Console.WriteLine($"Status Code: {response.StatusCode}");
                     Console.WriteLine(await response.Content.ReadAsStringAsync());
+                    Console.WriteLine("\n");
+                    Console.WriteLine("\n");
+                    Console.WriteLine("\n");
                 }
             }
         }
